@@ -1,7 +1,7 @@
 
 
-import 'package:dating_app/Screens/homescreen/homepage.dart';
-import 'package:dating_app/Screens/firstscreen/login_screen.dart';
+import 'package:dating_app/View/Screens/homescreen/homepage.dart';
+import 'package:dating_app/View/Screens/firstscreen/login_screen.dart';
 import 'package:dating_app/common_widget/textformfield.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';

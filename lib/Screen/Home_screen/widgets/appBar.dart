@@ -1,5 +1,5 @@
 //
-import 'package:dating_app/Screens/homescreen/homepage.dart';
+import 'package:dating_app/View/Screens/homescreen/homepage.dart';
 import 'package:flutter/material.dart';
 
 class MyStatefulWidget extends StatefulWidget {
@@ -26,7 +26,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget>
       body: Column(
         children: [
           SizedBox(
-            height: 120,
+            height: 1000,
           ),
           Container(
             child: Align(

@@ -6,35 +6,27 @@ import 'package:sizer/sizer.dart';
 
 import '../common_widget/textformfield.dart';
 
-
-
-
-
 class Date_timepicker extends StatelessWidget {
-  
   Widget build(BuildContext context) {
-    TextEditingController datetime =TextEditingController();
-    
+    TextEditingController datetime = TextEditingController();
+
     return Stack(
       children: [
-
-       Container(
-
-         width: 180,
-         child: CustomTextformfield(validator: (Value){
-
-         },
-         controller: datetime,
-         hint: "0/00/0000",
-         
-         ),
-         
-       ) ,
-       SizedBox(width: 20,),
+        GridView.count(crossAxisCount: 2),
+        Container(
+          width: 180,
+          child: CustomTextformfield(
+            validator: (Value) {},
+            controller: datetime,
+            hint: "0/00/0000",
+          ),
+        ),
+        SizedBox(
+          width: 20,
+        ),
         Positioned(
           left: 12.h,
           bottom: 2.h,
-
           child: Container(
             height: 30,
             width: 40,
@@ -50,15 +42,14 @@ class Date_timepicker extends StatelessWidget {
                   locale: DateTimePickerLocale.en_us,
                   looping: true,
                 );
-                if(datePicked == null) return;
+                if (datePicked == null) return;
                 datetime.text = DateFormat('yyyy/MM/dd').format(datePicked);
                 print("................$datePicked");
-        
+
                 final snackBar =
                     SnackBar(content: Text("Date Picked $datePicked"));
                 ScaffoldMessenger.of(context).showSnackBar(snackBar);
               },
-              
             ),
           ),
         ),
@@ -66,5 +57,3 @@ class Date_timepicker extends StatelessWidget {
     );
   }
 }
-
- 

@@ -1,14 +1,13 @@
-import 'package:dating_app/Screens/firstscreen/login_screen.dart';
+import 'package:dating_app/View/Screens/firstscreen/login_screen.dart';
 import 'package:dating_app/Screen/onboarding_Screen/gender_selection/SignUp_Screen.dart';
-import 'package:dating_app/Screens/signup/genderscreen/genderselecton.dart';
+import 'package:dating_app/View/Screens/signup/genderscreen/genderselecton.dart';
+import 'package:dating_app/View/Screens/signup/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:hw_introduction_screen/hw_introduction_screen.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
-import '../../Screens/signup/signup.dart';
-import '../../Screens/bottomnavigation/bottomnavigation.dart';
-import '../../Screens/signup/genderpreferscreen/lookinggender.dart';
+
 class Onbording_Screen extends StatelessWidget {
   const Onbording_Screen({ Key? key }) : super(key: key);
 

@@ -4,14 +4,14 @@ import 'package:scroll_date_picker/scroll_date_picker.dart';
 
 
 
-class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+class date extends StatefulWidget {
+  const date({Key? key}) : super(key: key);
 
   @override
-  _MyAppState createState() => _MyAppState();
+  _dateState createState() => _dateState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _dateState extends State<date> {
   DateTime _selectedDate = DateTime.now();
 
   @override

@@ -1,5 +1,6 @@
 import 'dart:ffi';
 
+import 'package:dating_app/common_widget/constantcolors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animated_button/flutter_animated_button.dart';
 import 'package:sizer/sizer.dart';
@@ -58,10 +59,10 @@ class Animation_button extends StatelessWidget {
   }
 }
 
-class _CustomButton extends StatelessWidget {
+class CustomButton extends StatelessWidget {
   final VoidCallback onPressed;
   final String text;
-  const _CustomButton({
+  const CustomButton({
     required this.onPressed,
     required this.text,
     Key? key,
@@ -74,12 +75,12 @@ class _CustomButton extends StatelessWidget {
       height: 7.h,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          gradient: const LinearGradient(
+          gradient:  LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
                 Color(0xFFFD0E42),
-                 Colors.black,
+                 Maincolor,
               ])),
       child: ElevatedButton(
         onPressed: onPressed,

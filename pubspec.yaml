@@ -28,12 +28,15 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   animate_do: ^2.1.0
-  animations: ^2.0.2
+  #animations: ^2.0.2
   cupertino_icons: ^1.0.2
+  custom_radio_grouped_button: ^2.1.2
   flutter:
     sdk: flutter
+ # flutter_animated_button: ^2.0.0
   flutter_animated_button: ^2.0.0
   flutter_holo_date_picker: ^1.0.3
+  flutter_staggered_animations: ^1.0.0
   fluttertoast: ^8.0.9
   font_awesome_flutter: ^10.1.0
   get: 4.6.5
@@ -66,9 +69,9 @@ flutter:
     - assets/Lottie/
     - assets/Lottie/81715-dating-app-concept.json
     - assets/images/
-    - assets/images/genderbg.png
     - assets/onbody_screen/
     - assets/Signupscreen/
+    - assets/images/imagepicking/
     
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
